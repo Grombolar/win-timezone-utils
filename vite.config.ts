@@ -1,26 +1,33 @@
 import { defineConfig } from 'vite'
-import path from 'path';
-import yaml from '@rollup/plugin-yaml';
-import dts from 'vite-plugin-dts';
+import path from 'path'
+import yaml from '@rollup/plugin-yaml'
+import dts from 'vite-plugin-dts'
 
 export default defineConfig({
   plugins: [
     yaml(),
     dts({
-      entryRoot: 'src',
-      outDir: 'dist/types',
-      tsconfigPath: './tsconfig.json'
+      insertTypesEntry: true,
+      outDir: 'dist',
+      entryRoot: 'src'
     })
   ],
+
   build: {
     lib: {
       entry: path.resolve(__dirname, 'src/index.ts'),
-      name: 'win-timezone-utils',
-      fileName: (format) => `win-timezone-utils.${format}.js`,
-      formats: ['es', 'cjs']
+      name: 'WinTimezoneUtils',
+      formats: ['es', 'cjs'],            // 明确声明两种格式
+      fileName: (format) =>
+        format === 'es'
+          ? 'index.es.js'
+          : 'index.cjs'                  // 不带 .js 更符合 Node 习惯
     },
     rollupOptions: {
-      external: []
+      external: ['vue'],
+      output: {
+        globals: { vue: 'Vue' }
+      }
     }
   }
 })

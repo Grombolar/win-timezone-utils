@@ -1,16 +1,29 @@
 {
   "name": "@grombolar/win-timezone-utils",
   "type": "module",
-  "version": "1.0.1",
-  "main": "dist/time-zones.cjs.js",
-  "module": "dist/time-zones.es.js",
-  "types": "dist/types/index.d.ts",
+  "version": "0.2.4",
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.es.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.es.js",
+      "require": "./dist/index.cjs"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "peerDependencies": {
+    "vue": "^3.0.0"
+  },
   "author": "Grombolar",
   "license": "ISC",
-  "description": "类似windows时区列表，按偏移量分组，支持国际化",
+  "description": "类似windows时区列表，按偏移量分组，支持国际化，需要vue3",
   "repository": {
     "type": "git",
-    "url": "https://github.com/Grombolar/win-timezone-utils"
+    "url": "git+https://github.com/Grombolar/win-timezone-utils.git"
   },
   "publishConfig": {
     "access": "public"
@@ -24,7 +37,6 @@
     "@rollup/plugin-yaml": "^4.1.2",
     "@types/luxon": "^3.6.2",
     "@types/node": "^24.0.4",
-    "enum-plus": "^2.3.3",
     "typescript": "~5.8.3",
     "vite": "^7.0.0",
     "vite-plugin-dts": "^4.5.4"
