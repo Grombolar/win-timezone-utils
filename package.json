@@ -1,0 +1,28 @@
+{
+  "name": "@grombolar/win-timezone-utils",
+  "version": "1.0.0",
+  "type": "module",
+  "author": "Grombolar",
+  "license": "ISC",
+  "description": "类似windows时区列表，按偏移量分组，支持国际化",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Grombolar/win-timezone-utils"
+  },
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "@rollup/plugin-yaml": "^4.1.2",
+    "@types/luxon": "^3.6.2",
+    "@types/node": "^24.0.4",
+    "enum-plus": "^2.3.3",
+    "typescript": "~5.8.3",
+    "vite": "^7.0.0"
+  },
+  "dependencies": {
+    "luxon": "^3.6.1"
+  }
+}

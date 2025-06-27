@@ -1,0 +1,140 @@
+timeZone:
+    Etc/GMT+12: Ligne internationale de changement de date Ouest
+    Etc/GMT+11: Temps universel coordonné -11
+    America/Adak: Îles Aléoutiennes
+    Pacific/Honolulu: Hawaii
+    Pacific/Marquesas: Îles Marquises
+    America/Anchorage: Alaska
+    Etc/GMT+9: Temps universel coordonné -09
+    America/Los_Angeles: Heure du Pacifique (États-Unis et Canada)
+    Mexico/Tijuana: Basse Californie
+    Etc/GMT+8: Temps universel coordonné -08
+    America/Mazatlan: 'La Paz, Mazatlán'
+    America/Denver: Heure des Rocheuses (États-Unis et Canada)
+    America/Phoenix: Arizona
+    America/Whitehorse: Yukon
+    Chile/EasterIsland: Île de Pâques
+    America/Mexico_City: 'Guadalajara, Mexico, Monterrey'
+    America/Regina: Saskatchewan
+    America/Chicago: Heure centrale (États-Unis et Canada)
+    America/Guatemala: Amérique centrale
+    America/Bogota: 'Bogotá, Lima, Quito, Rio Branco'
+    America/New_York: Heure de l'Est (États-Unis et Canada)
+    America/Havana: La Havane
+    America/Port-au-Prince: Haïti
+    America/Cancun: Chetumal
+    America/Grand_Turk: Îles Turques-et-Caïques
+    America/Indiana/Indianapolis: Indiana (Est)
+    America/Halifax: Heure de l'Atlantique (Canada)
+    America/Caracas: Caracas
+    America/Cuiaba: Cuiabá
+    America/Port_of_Spain: 'Georgetown, La Paz, Manaus, San Juan'
+    America/Santiago: Santiago
+    America/Asuncion: Asuncion
+    America/St_Johns: Terre-Neuve
+    America/Araguaina: Araguaína
+    America/Brasilia: Brasilia
+    America/Argentina/Buenos_Aires: Buenos Aires
+    America/Cayenne: 'Cayenne, Fortaleza'
+    America/Montevideo: Montevideo
+    America/Punta_Arenas: Punta Arenas
+    America/El_Salvador: Salvador
+    America/St_Pierre: Saint-Pierre-et-Miquelon
+    America/Godthab: Groenland
+    Etc/GMT+2: Temps universel coordonné -02
+    Atlantic/Cape_Verde: Îles du Cap-Vert
+    Atlantic/Azores: Açores
+    Etc/GMT: Temps universel coordonné
+    Europe/London: 'Dublin, Édimbourg, Lisbonne, Londres'
+    Africa/Monrovia: 'Monrovia, Reykjavik'
+    Africa/Sao_Tome: Sao Tomé
+    Africa/Casablanca: Casablanca
+    Europe/Berlin: 'Amsterdam, Berlin, Berne, Rome, Stockholm, Vienne'
+    Europe/Belgrade: 'Belgrade, Bratislava, Budapest, Ljubljana, Prague'
+    Europe/Paris: 'Bruxelles, Copenhague, Madrid, Paris'
+    Europe/Sarajevo: 'Sarajevo, Skopje, Varsovie, Zagreb'
+    Africa/Bangui: Afrique centrale
+    Asia/Beirut: Beyrouth
+    Africa/Tripoli: Tripoli
+    Africa/Johannesburg: 'Harare, Pretoria'
+    Europe/Helsinki: 'Helsinki, Kyiv, Riga, Sofia, Tallinn, Vilnius'
+    Europe/Chisinau: Chișinău
+    Europe/Kaliningrad: Kaliningrad
+    Asia/Gaza: 'Gaza, Hébron'
+    Africa/Khartoum: Khartoum
+    Africa/Cairo: Le Caire
+    Africa/Windhoek: Windhoek
+    Europe/Athens: 'Athènes, Bucarest'
+    Asia/Jerusalem: Jérusalem
+    Africa/Juba: Juba
+    Asia/Amman: Amman
+    Asia/Baghdad: Bagdad
+    Asia/Damascus: Damas
+    Europe/Volgograd: Volgograd
+    Asia/Kuwait: 'Koweït, Riyad'
+    Europe/Minsk: Minsk
+    Europe/Moscow: 'Moscou, Saint-Pétersbourg'
+    Africa/Nairobi: Nairobi
+    Europe/Istanbul: Istanbul
+    Asia/Tehran: Téhéran
+    Asia/Dubai: 'Abou Dhabi, Mascate'
+    Europe/Astrakhan: 'Astrakhan, Oulianovsk'
+    Asia/Yerevan: Erevan
+    Asia/Baku: Bakou
+    Asia/Tbilisi: Tbilissi
+    Indian/Mauritius: Port-Louis
+    Europe/Saratov: Saratov
+    Europe/Ulyanovsk: 'Izhevsk, Samara'
+    Asia/Kabul: Kaboul
+    Asia/Ashgabat: 'Achgabat, Tachkent'
+    Asia/Nur-Sultan: Astana
+    Asia/Yekaterinburg: Yekaterinbourg
+    Asia/Karachi: 'Islamabad, Karachi'
+    Asia/Kolkata: 'Chennai, Calcutta, Mumbai, New Delhi'
+    Asia/Sri_Jayawardenepura: Sri Jayawardenepura Kotte
+    Asia/Kathmandu: Katmandou
+    Asia/Bishkek: Bichkek
+    Asia/Dhaka: Dhaka
+    Asia/Omsk: Omsk
+    Asia/Yangon: Yangon
+    Asia/Barnaul: 'Barnaul, Gorno-Altaïsk'
+    Asia/Khovd: Khovd
+    Asia/Krasnoyarsk: Krasnoïarsk
+    Asia/Bangkok: 'Bangkok, Hanoï, Jakarta'
+    Asia/Tomsk: Tomsk
+    Asia/Novosibirsk: Novossibirsk
+    Asia/Shanghai: 'Pékin, Chongqing, Hong Kong SAR, Ürümqi'
+    Asia/Kuala_Lumpur: 'Kuala Lumpur, Singapour'
+    Australia/Perth: Perth
+    Asia/Taipei: Taipei
+    Asia/Ulaanbaatar: Oulan-Bator
+    Asia/Irkutsk: Irkoutsk
+    Australia/Eucla: Eucla
+    Asia/Chita: Tchita
+    Asia/Tokyo: 'Osaka, Sapporo, Tokyo'
+    Asia/Pyongyang: Pyongyang
+    Asia/Seoul: Séoul
+    Asia/Yakutsk: Iakoutsk
+    Australia/Adelaide: Adélaïde
+    Australia/Darwin: Darwin
+    Australia/Brisbane: Brisbane
+    Asia/Vladivostok: Vladivostok
+    Pacific/Guam: 'Guam, Port Moresby'
+    Australia/Hobart: Hobart
+    Australia/Sydney: 'Canberra, Melbourne, Sydney'
+    Australia/Lord_Howe: Île Lord Howe
+    Pacific/Bougainville: Île Bougainville
+    Asia/Magadan: Magadan
+    Australia/Norfolk: Île Norfolk
+    Asia/Chokurdakh: Chokurdakh
+    Asia/Sakhalin: Sakhaline
+    Pacific/Guadalcanal: 'Îles Salomon, Nouvelle-Calédonie'
+    Asia/Kamchatka: 'Anadyr, Petropavlovsk-Kamchatski'
+    Pacific/Auckland: 'Auckland, Wellington'
+    Pacific/Fiji: Fidji
+    Etc/GMT-12: Temps universel coordonné +12
+    Pacific/Chatham: Îles Chatham
+    Pacific/Nukualofa: Nuku'alofa
+    Pacific/Apia: Îles Samoa
+    Etc/GMT-13: Temps universel coordonné +13
+    Australia/Christmas: Île Christmas
