@@ -10,7 +10,7 @@ const list = getTimeZonesConsideringDST(baseZone)
 const createTimeZones = () => {
     return list.map(item => {
         return {
-            label: item.offset + ' ' + t(item.zone_name),
+            label: (item.final_offset || item.offset) + ' ' + t(item.zone_name),
             value: item.id
         }
     })
