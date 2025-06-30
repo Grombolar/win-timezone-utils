@@ -42,3 +42,10 @@ app.mount('#app')
 import { timeZones, LanguageEnum } from '@grombolar/win-timezone-utils'
 </script>
 ```
+
+### 其他方法
+
+| 方法名          | 传参      | 返回值       | 说明           |
+| -------------- | ----------| ------------ | ------------- |
+| formatterTimeInTimezone    | time:number, timezone:string | string('yyyy-MM-dd HH:mm:ss') | 将时间转换为对应时区的时间 |
+| getTimestempByTimezone | timeStr:string, timezone:string, format?:string | number | 将格式化的时间转为对应时区的时间戳 |

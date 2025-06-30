@@ -14,7 +14,7 @@ import {
 const list = getTimeZonesConsideringDST(baseZone)
 const _locale = ref<LanguageEnum>(LanguageEnum.EN)
 
-function createTimeZones() {
+const createTimeZones = () => {
   return list.map(item => ({
     label: (item.final_offset || item.offset) + ' ' + t(item.zone_name),
     value: item.id
