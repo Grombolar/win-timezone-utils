@@ -29,6 +29,11 @@ interface TimeZone {
   id: string
 }
 
+/**
+ *  处理夏令时
+ * @param timeZones 
+ * @returns 
+ */
 export function getTimeZonesConsideringDST(timeZones: TimeZone[]) {
   // 当前UTC时间
   const nowUtc = DateTime.utc();
@@ -40,7 +45,7 @@ export function getTimeZonesConsideringDST(timeZones: TimeZone[]) {
       // 如果在夏令时，我们使用 Luxon 的 dtInZone.offset 动态计算新的偏移
       const offsetMinutes = dtInZone.offset; // Luxon 的 offset 返回相对于 UTC 的分钟数，可带小数
       // 注意：offset 可能是浮点数，对于 .5 或 .75 这类，需要转换成分
-      // 这里简单向下取整到分钟
+      // 向下取整到分钟
       const totalMinutes = Math.floor(offsetMinutes);
       const sign = totalMinutes >= 0 ? '+' : '-';
       const absMins = Math.abs(totalMinutes);

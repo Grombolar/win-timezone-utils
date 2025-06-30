@@ -12,13 +12,33 @@ yarn add @grombolar/win-timezone-utils
 
 ### 使用
 
-```bash
-import { computed, ref } from 'vue';
-import winTimezoneUtils,{ LanguageEnum } from '@grombolar/win-timezone-utils'
-const timezones = computed(() => winTimezoneUtils.timeZones)
-const lang = ref('zh-CN')
-const changeLanguage = (val: LanguageEnum) => {
-  lang.value = val;
-  winTimezoneUtils.setLang(val);
-}
+主程序 main.ts
+
+```js
+import { createApp } from 'vue'
+import App from './App.vue'
+import WinTimezonePlugin from '@grombolar/win-timezone-utils'
+import { createI18n } from 'vue-i18n';
+const i18n = createI18n({
+  legacy: false,
+  locale: 'fr',
+  messages: ....
+})
+const app = createApp(App)
+app.use(i18n)
+app.use(WinTimezonePlugin, { i18n })
+app.mount('#app')
+```
+
+组件引用 vue
+
+```vue
+<template>
+<div v-for="item in timeZones" :key="item.value">
+  {{ item.label }}
+</div>
+</template>
+<script setup lang='ts'>
+import { timeZones, LanguageEnum } from '@grombolar/win-timezone-utils'
+</script>
 ```

@@ -11,7 +11,7 @@ function siphonI18n(prefix = LanguageEnum.ZH) {
   )[prefix];
 }
 
-let currentLocale = LanguageEnum.ZH;
+let currentLocale = LanguageEnum.EN;
 
 export const localesConfigs = {
   [LanguageEnum.ZH]: {
