@@ -7,13 +7,13 @@ timeZone:
     America/Anchorage: Alaska
     Etc/GMT+9: Coordinated Universal Time -09
     America/Los_Angeles: Pacific Time (US and Canada)
-    Mexico/Tijuana: Baja California
+    America/Tijuana: Baja California
     Etc/GMT+8: Coordinated Universal Time -08
     America/Mazatlan: 'La Paz, Mazatlán'
     America/Denver: Mountain Time (US and Canada)
     America/Phoenix: Arizona
     America/Whitehorse: Yukon
-    Chile/EasterIsland: Easter Island
+    Pacific/Easter: Easter Island
     America/Mexico_City: 'Guadalajara, Mexico City, Monterrey'
     America/Regina: Saskatchewan
     America/Chicago: Central Time (US and Canada)
@@ -33,14 +33,14 @@ timeZone:
     America/Asuncion: Asunción
     America/St_Johns: Newfoundland
     America/Araguaina: Araguaína
-    America/Brasilia: Brasília
+    America/Sao_Paulo: Brasília
     America/Argentina/Buenos_Aires: Buenos Aires
     America/Cayenne: 'Cayenne, Fortaleza'
     America/Montevideo: Montevideo
     America/Punta_Arenas: Punta Arenas
     America/El_Salvador: El Salvador
-    America/St_Pierre: Saint Pierre and Miquelon
-    America/Godthab: Greenland
+    America/Miquelon: Saint Pierre and Miquelon
+    America/Nuuk: Greenland
     Etc/GMT+2: Coordinated Universal Time -02
     Atlantic/Cape_Verde: Cape Verde Islands
     Atlantic/Azores: Azores
@@ -87,18 +87,18 @@ timeZone:
     Europe/Ulyanovsk: 'Izhevsk, Samara'
     Asia/Kabul: Kabul
     Asia/Ashgabat: 'Ashgabat, Tashkent'
-    Asia/Nur-Sultan: Astana
+    Asia/Almaty: Astana
     Asia/Yekaterinburg: Yekaterinburg
     Asia/Karachi: 'Islamabad, Karachi'
     Asia/Kolkata: 'Chennai, Kolkata, Mumbai, New Delhi'
-    Asia/Sri_Jayawardenepura: Sri Jayawardenepura Kotte
+    Asia/Colombo: Sri Jayawardenepura Kotte
     Asia/Kathmandu: Kathmandu
     Asia/Bishkek: Bishkek
     Asia/Dhaka: Dhaka
     Asia/Omsk: Omsk
     Asia/Yangon: Yangon
     Asia/Barnaul: 'Barnaul, Gorno-Altaysk'
-    Asia/Khovd: Khovd
+    Asia/Hovd: Khovd
     Asia/Krasnoyarsk: Krasnoyarsk
     Asia/Bangkok: 'Bangkok, Hanoi, Jakarta'
     Asia/Tomsk: Tomsk
@@ -125,8 +125,8 @@ timeZone:
     Australia/Lord_Howe: Lord Howe Island
     Pacific/Bougainville: Bougainville Island
     Asia/Magadan: Magadan
-    Australia/Norfolk: Norfolk Island
-    Asia/Chokurdakh: Chokurdakh
+    Pacific/Norfolk: Norfolk Island
+    Asia/Srednekolymsk: Chokurdakh
     Asia/Sakhalin: Sakhalin
     Pacific/Guadalcanal: 'Solomon Islands, New Caledonia'
     Asia/Kamchatka: 'Anadyr, Petropavlovsk Kamchatsky'
@@ -134,7 +134,7 @@ timeZone:
     Pacific/Fiji: Fiji
     Etc/GMT-12: Coordinated Universal Time +12
     Pacific/Chatham: Chatham Islands
-    Pacific/Nukualofa: Nuku'alofa
+    Pacific/Tongatapu: Nuku'alofa
     Pacific/Apia: Samoa
     Etc/GMT-13: Coordinated Universal Time +13
-    Australia/Christmas: Christmas Island
+    Indian/Christmas: Christmas Island

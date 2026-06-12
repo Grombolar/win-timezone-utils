@@ -7,13 +7,13 @@ timeZone:
     America/Anchorage: Alaska
     Etc/GMT+9: Temps universel coordonné -09
     America/Los_Angeles: Heure du Pacifique (États-Unis et Canada)
-    Mexico/Tijuana: Basse Californie
+    America/Tijuana: Basse Californie
     Etc/GMT+8: Temps universel coordonné -08
     America/Mazatlan: 'La Paz, Mazatlán'
     America/Denver: Heure des Rocheuses (États-Unis et Canada)
     America/Phoenix: Arizona
     America/Whitehorse: Yukon
-    Chile/EasterIsland: Île de Pâques
+    Pacific/Easter: Île de Pâques
     America/Mexico_City: 'Guadalajara, Mexico, Monterrey'
     America/Regina: Saskatchewan
     America/Chicago: Heure centrale (États-Unis et Canada)
@@ -33,14 +33,14 @@ timeZone:
     America/Asuncion: Asuncion
     America/St_Johns: Terre-Neuve
     America/Araguaina: Araguaína
-    America/Brasilia: Brasilia
+    America/Sao_Paulo: Brasilia
     America/Argentina/Buenos_Aires: Buenos Aires
     America/Cayenne: 'Cayenne, Fortaleza'
     America/Montevideo: Montevideo
     America/Punta_Arenas: Punta Arenas
     America/El_Salvador: Salvador
-    America/St_Pierre: Saint-Pierre-et-Miquelon
-    America/Godthab: Groenland
+    America/Miquelon: Saint-Pierre-et-Miquelon
+    America/Nuuk: Groenland
     Etc/GMT+2: Temps universel coordonné -02
     Atlantic/Cape_Verde: Îles du Cap-Vert
     Atlantic/Azores: Açores
@@ -87,18 +87,18 @@ timeZone:
     Europe/Ulyanovsk: 'Izhevsk, Samara'
     Asia/Kabul: Kaboul
     Asia/Ashgabat: 'Achgabat, Tachkent'
-    Asia/Nur-Sultan: Astana
+    Asia/Almaty: Astana
     Asia/Yekaterinburg: Yekaterinbourg
     Asia/Karachi: 'Islamabad, Karachi'
     Asia/Kolkata: 'Chennai, Calcutta, Mumbai, New Delhi'
-    Asia/Sri_Jayawardenepura: Sri Jayawardenepura Kotte
+    Asia/Colombo: Sri Jayawardenepura Kotte
     Asia/Kathmandu: Katmandou
     Asia/Bishkek: Bichkek
     Asia/Dhaka: Dhaka
     Asia/Omsk: Omsk
     Asia/Yangon: Yangon
     Asia/Barnaul: 'Barnaul, Gorno-Altaïsk'
-    Asia/Khovd: Khovd
+    Asia/Hovd: Khovd
     Asia/Krasnoyarsk: Krasnoïarsk
     Asia/Bangkok: 'Bangkok, Hanoï, Jakarta'
     Asia/Tomsk: Tomsk
@@ -125,8 +125,8 @@ timeZone:
     Australia/Lord_Howe: Île Lord Howe
     Pacific/Bougainville: Île Bougainville
     Asia/Magadan: Magadan
-    Australia/Norfolk: Île Norfolk
-    Asia/Chokurdakh: Chokurdakh
+    Pacific/Norfolk: Île Norfolk
+    Asia/Srednekolymsk: Chokurdakh
     Asia/Sakhalin: Sakhaline
     Pacific/Guadalcanal: 'Îles Salomon, Nouvelle-Calédonie'
     Asia/Kamchatka: 'Anadyr, Petropavlovsk-Kamchatski'
@@ -134,7 +134,7 @@ timeZone:
     Pacific/Fiji: Fidji
     Etc/GMT-12: Temps universel coordonné +12
     Pacific/Chatham: Îles Chatham
-    Pacific/Nukualofa: Nuku'alofa
+    Pacific/Tongatapu: Nuku'alofa
     Pacific/Apia: Îles Samoa
     Etc/GMT-13: Temps universel coordonné +13
-    Australia/Christmas: Île Christmas
+    Indian/Christmas: Île Christmas

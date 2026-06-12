@@ -42,8 +42,8 @@ export const baseZone = [
   },
   {
     offset: '(UTC-08:00)',
-    zone_name: $t('timeZone.Mexico/Tijuana'),
-    id: 'Mexico/Tijuana'
+    zone_name: $t('timeZone.America/Tijuana'),
+    id: 'America/Tijuana'
   },
   {
     offset: '(UTC-08:00)',
@@ -72,8 +72,8 @@ export const baseZone = [
   },
   {
     offset: '(UTC-06:00)',
-    zone_name: $t('timeZone.Chile/EasterIsland'),
-    id: 'Chile/EasterIsland'
+    zone_name: $t('timeZone.Pacific/Easter'),
+    id: 'Pacific/Easter'
   },
   {
     offset: '(UTC-06:00)',
@@ -172,8 +172,8 @@ export const baseZone = [
   },
   {
     offset: '(UTC-03:00)',
-    zone_name: $t('timeZone.America/Brasilia'),
-    id: 'America/Brasilia'
+    zone_name: $t('timeZone.America/Sao_Paulo'),
+    id: 'America/Sao_Paulo'
   },
   {
     offset: '(UTC-03:00)',
@@ -202,13 +202,13 @@ export const baseZone = [
   },
   {
     offset: '(UTC-03:00)',
-    zone_name: $t('timeZone.America/St_Pierre'),
-    id: 'America/St_Pierre'
+    zone_name: $t('timeZone.America/Miquelon'),
+    id: 'America/Miquelon'
   },
   {
     offset: '(UTC-02:00)',
-    zone_name: $t('timeZone.America/Godthab'),
-    id: 'America/Godthab'
+    zone_name: $t('timeZone.America/Nuuk'),
+    id: 'America/Nuuk'
   },
   {
     offset: '(UTC-02:00)',
@@ -442,8 +442,8 @@ export const baseZone = [
   },
   {
     offset: '(UTC+05:00)',
-    zone_name: $t('timeZone.Asia/Nur-Sultan'),
-    id: 'Asia/Nur-Sultan'
+    zone_name: $t('timeZone.Asia/Almaty'),
+    id: 'Asia/Almaty'
   },
   {
     offset: '(UTC+05:00)',
@@ -462,8 +462,8 @@ export const baseZone = [
   },
   {
     offset: '(UTC+05:30)',
-    zone_name: $t('timeZone.Asia/Sri_Jayawardenepura'),
-    id: 'Asia/Sri_Jayawardenepura'
+    zone_name: $t('timeZone.Asia/Colombo'),
+    id: 'Asia/Colombo'
   },
   {
     offset: '(UTC+05:45)',
@@ -497,8 +497,8 @@ export const baseZone = [
   },
   {
     offset: '(UTC+07:00)',
-    zone_name: $t('timeZone.Asia/Khovd'),
-    id: 'Asia/Khovd'
+    zone_name: $t('timeZone.Asia/Hovd'),
+    id: 'Asia/Hovd'
   },
   {
     offset: '(UTC+07:00)',
@@ -632,13 +632,13 @@ export const baseZone = [
   },
   {
     offset: '(UTC+11:00)',
-    zone_name: $t('timeZone.Australia/Norfolk'),
-    id: 'Australia/Norfolk'
+    zone_name: $t('timeZone.Pacific/Norfolk'),
+    id: 'Pacific/Norfolk'
   },
   {
     offset: '(UTC+11:00)',
-    zone_name: $t('timeZone.Asia/Chokurdakh'),
-    id: 'Asia/Chokurdakh'
+    zone_name: $t('timeZone.Asia/Srednekolymsk'),
+    id: 'Asia/Srednekolymsk'
   },
   {
     offset: '(UTC+11:00)',
@@ -677,8 +677,8 @@ export const baseZone = [
   },
   {
     offset: '(UTC+13:00)',
-    zone_name: $t('timeZone.Pacific/Nukualofa'),
-    id: 'Pacific/Nukualofa'
+    zone_name: $t('timeZone.Pacific/Tongatapu'),
+    id: 'Pacific/Tongatapu'
   },
   {
     offset: '(UTC+13:00)',
@@ -692,7 +692,7 @@ export const baseZone = [
   },
   {
     offset: '(UTC+14:00)',
-    zone_name: $t('timeZone.Australia/Christmas'),
-    id: 'Australia/Christmas'
+    zone_name: $t('timeZone.Indian/Christmas'),
+    id: 'Indian/Christmas'
   }
 ]

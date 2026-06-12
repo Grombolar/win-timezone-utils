@@ -7,13 +7,13 @@ timeZone:
     America/Anchorage: 阿拉斯加
     Etc/GMT+9: 协调世界时-09
     America/Los_Angeles: 太平洋时间(美国和加拿大)
-    Mexico/Tijuana: 下加利福尼亚州
+    America/Tijuana: 下加利福尼亚州
     Etc/GMT+8: 协调世界时-08
     America/Mazatlan: 拉巴斯、马扎特兰
     America/Denver: 山地时间(美国和加拿大)
     America/Phoenix: 亚利桑那
     America/Whitehorse: 育空
-    Chile/EasterIsland: 复活节岛
+    Pacific/Easter: 复活节岛
     America/Mexico_City: 瓜达拉哈拉，墨西哥城，蒙特雷
     America/Regina: 萨斯喀彻温
     America/Chicago: 中部时间(美国和加拿大)
@@ -33,14 +33,14 @@ timeZone:
     America/Asuncion: 亚松森
     America/St_Johns: 纽芬兰
     America/Araguaina: 阿拉瓜伊纳
-    America/Brasilia: 巴西利亚
+    America/Sao_Paulo: 巴西利亚
     America/Argentina/Buenos_Aires: 布宜诺斯艾利斯
     America/Cayenne: 卡宴，福塔雷萨
     America/Montevideo: 蒙得维的亚
     America/Punta_Arenas: 蓬塔阿雷纳斯
     America/El_Salvador: 萨尔瓦多
-    America/St_Pierre: 圣皮埃尔和密克隆群岛
-    America/Godthab: 格陵兰
+    America/Miquelon: 圣皮埃尔和密克隆群岛
+    America/Nuuk: 格陵兰
     Etc/GMT+2: 协调世界时-02
     Atlantic/Cape_Verde: 佛得角群岛
     Atlantic/Azores: 亚速尔群岛
@@ -87,18 +87,18 @@ timeZone:
     Europe/Ulyanovsk: 伊热夫斯克，萨马拉
     Asia/Kabul: 喀布尔
     Asia/Ashgabat: 阿什哈巴德，塔什干
-    Asia/Nur-Sultan: 阿斯塔纳
+    Asia/Almaty: 阿斯塔纳
     Asia/Yekaterinburg: 叶卡捷琳堡
     Asia/Karachi: 伊斯兰堡，卡拉奇
     Asia/Kolkata: 钦奈，加尔各答，孟买，新德里
-    Asia/Sri_Jayawardenepura: 斯里加亚渥登普拉
+    Asia/Colombo: 斯里加亚渥登普拉
     Asia/Kathmandu: 加德满都
     Asia/Bishkek: 比什凯克
     Asia/Dhaka: 达卡
     Asia/Omsk: 鄂木斯克
     Asia/Yangon: 仰光
     Asia/Barnaul: 巴尔瑙尔，戈尔诺-阿尔泰斯克
-    Asia/Khovd: 科布多
+    Asia/Hovd: 科布多
     Asia/Krasnoyarsk: 克拉斯诺亚尔斯克
     Asia/Bangkok: 曼谷，河内，雅加达
     Asia/Tomsk: 托木斯克
@@ -125,8 +125,8 @@ timeZone:
     Australia/Lord_Howe: 豪勋爵岛
     Pacific/Bougainville: 布干维尔岛
     Asia/Magadan: 马加丹
-    Australia/Norfolk: 诺福克岛
-    Asia/Chokurdakh: 乔库尔达赫
+    Pacific/Norfolk: 诺福克岛
+    Asia/Srednekolymsk: 乔库尔达赫
     Asia/Sakhalin: 萨哈林
     Pacific/Guadalcanal: 所罗门群岛，新喀里多尼亚
     Asia/Kamchatka: 阿纳德尔，堪察加彼得罗巴甫洛夫斯克
@@ -134,7 +134,7 @@ timeZone:
     Pacific/Fiji: 斐济
     Etc/GMT-12: 协调世界时+12
     Pacific/Chatham: 查塔姆群岛
-    Pacific/Nukualofa: 努库阿洛法
+    Pacific/Tongatapu: 努库阿洛法
     Pacific/Apia: 萨摩亚群岛
     Etc/GMT-13: 协调世界时+13
-    Australia/Christmas: 圣诞岛
+    Indian/Christmas: 圣诞岛
