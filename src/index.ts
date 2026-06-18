@@ -8,6 +8,7 @@ import {
   getTimeZonesConsideringDST,
   formatterTimeInTimezone,
   getTimestempByTimezone,
+  toIanaTimezoneId, toWindowsTimezoneId, isWindowsTimezoneId
 } from './utils/dateTimeUtils'
 
 const list = getTimeZonesConsideringDST(baseZone)
@@ -85,6 +86,5 @@ function install(app: App, options: WinTzOptions = {}) {
 }
 
 export default { install }
-export { formatterTimeInTimezone, getTimestempByTimezone }
-export { toIanaTimezoneId, toWindowsTimezoneId, isWindowsTimezoneId } from './utils/dateTimeUtils'
+export { formatterTimeInTimezone, getTimestempByTimezone, toIanaTimezoneId, toWindowsTimezoneId, isWindowsTimezoneId }
 export { LanguageEnum }

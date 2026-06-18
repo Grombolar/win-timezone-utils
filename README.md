@@ -53,7 +53,6 @@ export interface TimeZone {
   label: string
   // IANA 时区 ID
   // Linux / Luxon 场景下直接使用
-  // Windows 时区 ID
   value: string
   // Windows 时区 ID
   winValue: string
