@@ -7,27 +7,49 @@ import { setLocale, t } from './i18n'
 import {
   getTimeZonesConsideringDST,
   formatterTimeInTimezone,
-  getTimestempByTimezone
+  getTimestempByTimezone,
 } from './utils/dateTimeUtils'
-
 
 const list = getTimeZonesConsideringDST(baseZone)
 const _locale = ref<LanguageEnum>(LanguageEnum.EN)
 
-const createTimeZones = () => {
-  return list.map(item => ({
-    label: (item.final_offset || item.offset) + ' ' + t(item.zone_name),
-    value: item.id
-  }))
+/**
+ * 生成 label（展示文本）。无论「传过来的 Windows 或 Linux 时区 ID 都使用同一份 label。 */
+function buildLabel<T extends { final_offset?: string; offset: string; zone_name: string }>(item: T) {
+  return (item.final_offset || item.offset) + ' ' + t(item.zone_name)
 }
 
+/**
+ * Vue 下拉选项。`value` 是 IANA 时区 ID（Linux / Luxon 场景下直接使用）。
+ * `winValue` 是对应的 Windows 时区 ID。
+ *
+ * Label（label 文案/展示文本）对于两种时区 ID 保持一致。
+ */
 export const timeZones = computed(() => {
-  _locale.value                // 建立依赖；值本身不用
-  return createTimeZones()
+  _locale.value // 建立依赖；值本身不用
+  return list.map(item => ({
+    label: buildLabel(item),
+    value: item.id,        // IANA
+    winValue: item.winId,   // Windows
+  }))
+})
+
+/**
+ * 以 Windows 时区 ID 作为 `value` 的下拉选项。
+ * 如果从 Windows 抓取到的时区 ID 被用作数据交换时，请使用此数组。
+ */
+export const winTimeZones = computed(() => {
+  _locale.value
+  return list.map(item => ({
+    label: buildLabel(item), // 与 timeZones 保持一致
+    value: item.winId,     // Windows 时区 ID 作为 value
+    ianaValue: item.id,     // 同时保留 IANA 便于互转
+  }))
 })
 
 export const winTimezoneUtils = readonly({
-  timeZones
+  timeZones,
+  winTimeZones,
 })
 
 export interface WinTzOptions {
@@ -57,11 +79,12 @@ function install(app: App, options: WinTzOptions = {}) {
           setLocale(lang)
         }
       },
-      { immediate: true }
+      { immediate: true },
     )
   }
 }
 
 export default { install }
 export { formatterTimeInTimezone, getTimestempByTimezone }
+export { toIanaTimezoneId, toWindowsTimezoneId, isWindowsTimezoneId } from './utils/dateTimeUtils'
 export { LanguageEnum }

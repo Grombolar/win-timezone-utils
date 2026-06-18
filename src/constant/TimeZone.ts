@@ -1,698 +1,160 @@
-import { $t } from '../i18n/index';
-export const baseZone = [
-  {
-    offset: '(UTC-12:00)',
-    zone_name: $t('timeZone.Etc/GMT+12'),
-    id: 'Etc/GMT+12'
-  },
-  {
-    offset: '(UTC-11:00)',
-    zone_name: $t('timeZone.Etc/GMT+11'),
-    id: 'Etc/GMT+11'
-  },
-  {
-    offset: '(UTC-10:00)',
-    zone_name: $t('timeZone.America/Adak'),
-    id: 'America/Adak'
-  },
-  {
-    offset: '(UTC-10:00)',
-    zone_name: $t('timeZone.Pacific/Honolulu'),
-    id: 'Pacific/Honolulu'
-  },
-  {
-    offset: '(UTC-09:30)',
-    zone_name: $t('timeZone.Pacific/Marquesas'),
-    id: 'Pacific/Marquesas'
-  },
-  {
-    offset: '(UTC-09:00)',
-    zone_name: $t('timeZone.America/Anchorage'),
-    id: 'America/Anchorage'
-  },
-  {
-    offset: '(UTC-09:00)',
-    zone_name: $t('timeZone.Etc/GMT+9'),
-    id: 'Etc/GMT+9'
-  },
-  {
-    offset: '(UTC-08:00)',
-    zone_name: $t('timeZone.America/Los_Angeles'),
-    id: 'America/Los_Angeles'
-  },
-  {
-    offset: '(UTC-08:00)',
-    zone_name: $t('timeZone.America/Tijuana'),
-    id: 'America/Tijuana'
-  },
-  {
-    offset: '(UTC-08:00)',
-    zone_name: $t('timeZone.Etc/GMT+8'),
-    id: 'Etc/GMT+8'
-  },
-  {
-    offset: '(UTC-07:00)',
-    zone_name: $t('timeZone.America/Mazatlan'),
-    id: 'America/Mazatlan'
-  },
-  {
-    offset: '(UTC-07:00)',
-    zone_name: $t('timeZone.America/Denver'),
-    id: 'America/Denver'
-  },
-  {
-    offset: '(UTC-07:00)',
-    zone_name: $t('timeZone.America/Phoenix'),
-    id: 'America/Phoenix'
-  },
-  {
-    offset: '(UTC-07:00)',
-    zone_name: $t('timeZone.America/Whitehorse'),
-    id: 'America/Whitehorse'
-  },
-  {
-    offset: '(UTC-06:00)',
-    zone_name: $t('timeZone.Pacific/Easter'),
-    id: 'Pacific/Easter'
-  },
-  {
-    offset: '(UTC-06:00)',
-    zone_name: $t('timeZone.America/Mexico_City'),
-    id: 'America/Mexico_City'
-  },
-  {
-    offset: '(UTC-06:00)',
-    zone_name: $t('timeZone.America/Regina'),
-    id: 'America/Regina'
-  },
-  {
-    offset: '(UTC-06:00)',
-    zone_name: $t('timeZone.America/Chicago'),
-    id: 'America/Chicago'
-  },
-  {
-    offset: '(UTC-06:00)',
-    zone_name: $t('timeZone.America/Guatemala'),
-    id: 'America/Guatemala'
-  },
-  {
-    offset: '(UTC-05:00)',
-    zone_name: $t('timeZone.America/Bogota'),
-    id: 'America/Bogota'
-  },
-  {
-    offset: '(UTC-05:00)',
-    zone_name: $t('timeZone.America/New_York'),
-    id: 'America/New_York'
-  },
-  {
-    offset: '(UTC-05:00)',
-    zone_name: $t('timeZone.America/Havana'),
-    id: 'America/Havana'
-  },
-  {
-    offset: '(UTC-05:00)',
-    zone_name: $t('timeZone.America/Port-au-Prince'),
-    id: 'America/Port-au-Prince'
-  },
-  {
-    offset: '(UTC-05:00)',
-    zone_name: $t('timeZone.America/Cancun'),
-    id: 'America/Cancun'
-  },
-  {
-    offset: '(UTC-05:00)',
-    zone_name: $t('timeZone.America/Grand_Turk'),
-    id: 'America/Grand_Turk'
-  },
-  {
-    offset: '(UTC-05:00)',
-    zone_name: $t('timeZone.America/Indiana/Indianapolis'),
-    id: 'America/Indiana/Indianapolis'
-  },
-  {
-    offset: '(UTC-04:00)',
-    zone_name: $t('timeZone.America/Halifax'),
-    id: 'America/Halifax'
-  },
-  {
-    offset: '(UTC-04:00)',
-    zone_name: $t('timeZone.America/Caracas'),
-    id: 'America/Caracas'
-  },
-  {
-    offset: '(UTC-04:00)',
-    zone_name: $t('timeZone.America/Cuiaba'),
-    id: 'America/Cuiaba'
-  },
-  {
-    offset: '(UTC-04:00)',
-    zone_name: $t('timeZone.America/Port_of_Spain'),
-    id: 'America/Port_of_Spain'
-  },
-  {
-    offset: '(UTC-04:00)',
-    zone_name: $t('timeZone.America/Santiago'),
-    id: 'America/Santiago'
-  },
-  {
-    offset: '(UTC-04:00)',
-    zone_name: $t('timeZone.America/Asuncion'),
-    id: 'America/Asuncion'
-  },
-  {
-    offset: '(UTC-03:30)',
-    zone_name: $t('timeZone.America/St_Johns'),
-    id: 'America/St_Johns'
-  },
-  {
-    offset: '(UTC-03:00)',
-    zone_name: $t('timeZone.America/Araguaina'),
-    id: 'America/Araguaina'
-  },
-  {
-    offset: '(UTC-03:00)',
-    zone_name: $t('timeZone.America/Sao_Paulo'),
-    id: 'America/Sao_Paulo'
-  },
-  {
-    offset: '(UTC-03:00)',
-    zone_name: $t('timeZone.America/Argentina/Buenos_Aires'),
-    id: 'America/Argentina/Buenos_Aires'
-  },
-  {
-    offset: '(UTC-03:00)',
-    zone_name: $t('timeZone.America/Cayenne'),
-    id: 'America/Cayenne'
-  },
-  {
-    offset: '(UTC-03:00)',
-    zone_name: $t('timeZone.America/Montevideo'),
-    id: 'America/Montevideo'
-  },
-  {
-    offset: '(UTC-03:00)',
-    zone_name: $t('timeZone.America/Punta_Arenas'),
-    id: 'America/Punta_Arenas'
-  },
-  {
-    offset: '(UTC-03:00)',
-    zone_name: $t('timeZone.America/El_Salvador'),
-    id: 'America/El_Salvador'
-  },
-  {
-    offset: '(UTC-03:00)',
-    zone_name: $t('timeZone.America/Miquelon'),
-    id: 'America/Miquelon'
-  },
-  {
-    offset: '(UTC-02:00)',
-    zone_name: $t('timeZone.America/Nuuk'),
-    id: 'America/Nuuk'
-  },
-  {
-    offset: '(UTC-02:00)',
-    zone_name: $t('timeZone.Etc/GMT+2'),
-    id: 'Etc/GMT+2'
-  },
-  {
-    offset: '(UTC-01:00)',
-    zone_name: $t('timeZone.Atlantic/Cape_Verde'),
-    id: 'Atlantic/Cape_Verde'
-  },
-  {
-    offset: '(UTC-01:00)',
-    zone_name: $t('timeZone.Atlantic/Azores'),
-    id: 'Atlantic/Azores'
-  },
-  {
-    offset: '(UTC)',
-    zone_name: $t('timeZone.Etc/GMT'),
-    id: 'Etc/GMT'
-  },
-  {
-    offset: '(UTC+00:00)',
-    zone_name: $t('timeZone.Europe/London'),
-    id: 'Europe/London'
-  },
-  {
-    offset: '(UTC+00:00)',
-    zone_name: $t('timeZone.Africa/Monrovia'),
-    id: 'Africa/Monrovia'
-  },
-  {
-    offset: '(UTC+00:00)',
-    zone_name: $t('timeZone.Africa/Sao_Tome'),
-    id: 'Africa/Sao_Tome'
-  },
-  {
-    offset: '(UTC+01:00)',
-    zone_name: $t('timeZone.Africa/Casablanca'),
-    id: 'Africa/Casablanca'
-  },
-  {
-    offset: '(UTC+01:00)',
-    zone_name: $t('timeZone.Europe/Berlin'),
-    id: 'Europe/Berlin'
-  },
-  {
-    offset: '(UTC+01:00)',
-    zone_name: $t('timeZone.Europe/Belgrade'),
-    id: 'Europe/Belgrade'
-  },
-  {
-    offset: '(UTC+01:00)',
-    zone_name: $t('timeZone.Europe/Paris'),
-    id: 'Europe/Paris'
-  },
-  {
-    offset: '(UTC+01:00)',
-    zone_name: $t('timeZone.Europe/Sarajevo'),
-    id: 'Europe/Sarajevo'
-  },
-  {
-    offset: '(UTC+01:00)',
-    zone_name: $t('timeZone.Africa/Bangui'),
-    id: 'Africa/Bangui'
-  },
-  {
-    offset: '(UTC+02:00)',
-    zone_name: $t('timeZone.Asia/Beirut'),
-    id: 'Asia/Beirut'
-  },
-  {
-    offset: '(UTC+02:00)',
-    zone_name: $t('timeZone.Africa/Tripoli'),
-    id: 'Africa/Tripoli'
-  },
-  {
-    offset: '(UTC+02:00)',
-    zone_name: $t('timeZone.Africa/Johannesburg'),
-    id: 'Africa/Johannesburg'
-  },
-  {
-    offset: '(UTC+02:00)',
-    zone_name: $t('timeZone.Europe/Helsinki'),
-    id: 'Europe/Helsinki'
-  },
-  {
-    offset: '(UTC+02:00)',
-    zone_name: $t('timeZone.Europe/Chisinau'),
-    id: 'Europe/Chisinau'
-  },
-  {
-    offset: '(UTC+02:00)',
-    zone_name: $t('timeZone.Europe/Kaliningrad'),
-    id: 'Europe/Kaliningrad'
-  },
-  {
-    offset: '(UTC+02:00)',
-    zone_name: $t('timeZone.Asia/Gaza'),
-    id: 'Asia/Gaza'
-  },
-  {
-    offset: '(UTC+02:00)',
-    zone_name: $t('timeZone.Africa/Khartoum'),
-    id: 'Africa/Khartoum'
-  },
-  {
-    offset: '(UTC+02:00)',
-    zone_name: $t('timeZone.Africa/Cairo'),
-    id: 'Africa/Cairo'
-  },
-  {
-    offset: '(UTC+02:00)',
-    zone_name: $t('timeZone.Africa/Windhoek'),
-    id: 'Africa/Windhoek'
-  },
-  {
-    offset: '(UTC+02:00)',
-    zone_name: $t('timeZone.Europe/Athens'),
-    id: 'Europe/Athens'
-  },
-  {
-    offset: '(UTC+02:00)',
-    zone_name: $t('timeZone.Asia/Jerusalem'),
-    id: 'Asia/Jerusalem'
-  },
-  {
-    offset: '(UTC+02:00)',
-    zone_name: $t('timeZone.Africa/Juba'),
-    id: 'Africa/Juba'
-  },
-  {
-    offset: '(UTC+03:00)',
-    zone_name: $t('timeZone.Asia/Amman'),
-    id: 'Asia/Amman'
-  },
-  {
-    offset: '(UTC+03:00)',
-    zone_name: $t('timeZone.Asia/Baghdad'),
-    id: 'Asia/Baghdad'
-  },
-  {
-    offset: '(UTC+03:00)',
-    zone_name: $t('timeZone.Asia/Damascus'),
-    id: 'Asia/Damascus'
-  },
-  {
-    offset: '(UTC+03:00)',
-    zone_name: $t('timeZone.Europe/Volgograd'),
-    id: 'Europe/Volgograd'
-  },
-  {
-    offset: '(UTC+03:00)',
-    zone_name: $t('timeZone.Asia/Kuwait'),
-    id: 'Asia/Kuwait'
-  },
-  {
-    offset: '(UTC+03:00)',
-    zone_name: $t('timeZone.Europe/Minsk'),
-    id: 'Europe/Minsk'
-  },
-  {
-    offset: '(UTC+03:00)',
-    zone_name: $t('timeZone.Europe/Moscow'),
-    id: 'Europe/Moscow'
-  },
-  {
-    offset: '(UTC+03:00)',
-    zone_name: $t('timeZone.Africa/Nairobi'),
-    id: 'Africa/Nairobi'
-  },
-  {
-    offset: '(UTC+03:00)',
-    zone_name: $t('timeZone.Europe/Istanbul'),
-    id: 'Europe/Istanbul'
-  },
-  {
-    offset: '(UTC+03:30)',
-    zone_name: $t('timeZone.Asia/Tehran'),
-    id: 'Asia/Tehran'
-  },
-  {
-    offset: '(UTC+04:00)',
-    zone_name: $t('timeZone.Asia/Dubai'),
-    id: 'Asia/Dubai'
-  },
-  {
-    offset: '(UTC+04:00)',
-    zone_name: $t('timeZone.Europe/Astrakhan'),
-    id: 'Europe/Astrakhan'
-  },
-  {
-    offset: '(UTC+04:00)',
-    zone_name: $t('timeZone.Asia/Yerevan'),
-    id: 'Asia/Yerevan'
-  },
-  {
-    offset: '(UTC+04:00)',
-    zone_name: $t('timeZone.Asia/Baku'),
-    id: 'Asia/Baku'
-  },
-  {
-    offset: '(UTC+04:00)',
-    zone_name: $t('timeZone.Asia/Tbilisi'),
-    id: 'Asia/Tbilisi'
-  },
-  {
-    offset: '(UTC+04:00)',
-    zone_name: $t('timeZone.Indian/Mauritius'),
-    id: 'Indian/Mauritius'
-  },
-  {
-    offset: '(UTC+04:00)',
-    zone_name: $t('timeZone.Europe/Saratov'),
-    id: 'Europe/Saratov'
-  },
-  {
-    offset: '(UTC+04:00)',
-    zone_name: $t('timeZone.Europe/Ulyanovsk'),
-    id: 'Europe/Ulyanovsk'
-  },
-  {
-    offset: '(UTC+04:30)',
-    zone_name: $t('timeZone.Asia/Kabul'),
-    id: 'Asia/Kabul'
-  },
-  {
-    offset: '(UTC+05:00)',
-    zone_name: $t('timeZone.Asia/Ashgabat'),
-    id: 'Asia/Ashgabat'
-  },
-  {
-    offset: '(UTC+05:00)',
-    zone_name: $t('timeZone.Asia/Almaty'),
-    id: 'Asia/Almaty'
-  },
-  {
-    offset: '(UTC+05:00)',
-    zone_name: $t('timeZone.Asia/Yekaterinburg'),
-    id: 'Asia/Yekaterinburg'
-  },
-  {
-    offset: '(UTC+05:00)',
-    zone_name: $t('timeZone.Asia/Karachi'),
-    id: 'Asia/Karachi'
-  },
-  {
-    offset: '(UTC+05:30)',
-    zone_name: $t('timeZone.Asia/Kolkata'),
-    id: 'Asia/Kolkata'
-  },
-  {
-    offset: '(UTC+05:30)',
-    zone_name: $t('timeZone.Asia/Colombo'),
-    id: 'Asia/Colombo'
-  },
-  {
-    offset: '(UTC+05:45)',
-    zone_name: $t('timeZone.Asia/Kathmandu'),
-    id: 'Asia/Kathmandu'
-  },
-  {
-    offset: '(UTC+06:00)',
-    zone_name: $t('timeZone.Asia/Bishkek'),
-    id: 'Asia/Bishkek'
-  },
-  {
-    offset: '(UTC+06:00)',
-    zone_name: $t('timeZone.Asia/Dhaka'),
-    id: 'Asia/Dhaka'
-  },
-  {
-    offset: '(UTC+06:00)',
-    zone_name: $t('timeZone.Asia/Omsk'),
-    id: 'Asia/Omsk'
-  },
-  {
-    offset: '(UTC+06:30)',
-    zone_name: $t('timeZone.Asia/Yangon'),
-    id: 'Asia/Yangon'
-  },
-  {
-    offset: '(UTC+07:00)',
-    zone_name: $t('timeZone.Asia/Barnaul'),
-    id: 'Asia/Barnaul'
-  },
-  {
-    offset: '(UTC+07:00)',
-    zone_name: $t('timeZone.Asia/Hovd'),
-    id: 'Asia/Hovd'
-  },
-  {
-    offset: '(UTC+07:00)',
-    zone_name: $t('timeZone.Asia/Krasnoyarsk'),
-    id: 'Asia/Krasnoyarsk'
-  },
-  {
-    offset: '(UTC+07:00)',
-    zone_name: $t('timeZone.Asia/Bangkok'),
-    id: 'Asia/Bangkok'
-  },
-  {
-    offset: '(UTC+07:00)',
-    zone_name: $t('timeZone.Asia/Tomsk'),
-    id: 'Asia/Tomsk'
-  },
-  {
-    offset: '(UTC+07:00)',
-    zone_name: $t('timeZone.Asia/Novosibirsk'),
-    id: 'Asia/Novosibirsk'
-  },
-  {
-    offset: '(UTC+08:00)',
-    zone_name: $t('timeZone.Asia/Shanghai'),
-    id: 'Asia/Shanghai'
-  },
-  {
-    offset: '(UTC+08:00)',
-    zone_name: $t('timeZone.Asia/Kuala_Lumpur'),
-    id: 'Asia/Kuala_Lumpur'
-  },
-  {
-    offset: '(UTC+08:00)',
-    zone_name: $t('timeZone.Australia/Perth'),
-    id: 'Australia/Perth'
-  },
-  {
-    offset: '(UTC+08:00)',
-    zone_name: $t('timeZone.Asia/Taipei'),
-    id: 'Asia/Taipei'
-  },
-  {
-    offset: '(UTC+08:00)',
-    zone_name: $t('timeZone.Asia/Ulaanbaatar'),
-    id: 'Asia/Ulaanbaatar'
-  },
-  {
-    offset: '(UTC+08:00)',
-    zone_name: $t('timeZone.Asia/Irkutsk'),
-    id: 'Asia/Irkutsk'
-  },
-  {
-    offset: '(UTC+08:45)',
-    zone_name: $t('timeZone.Australia/Eucla'),
-    id: 'Australia/Eucla'
-  },
-  {
-    offset: '(UTC+09:00)',
-    zone_name: $t('timeZone.Asia/Chita'),
-    id: 'Asia/Chita'
-  },
-  {
-    offset: '(UTC+09:00)',
-    zone_name: $t('timeZone.Asia/Tokyo'),
-    id: 'Asia/Tokyo'
-  },
-  {
-    offset: '(UTC+09:00)',
-    zone_name: $t('timeZone.Asia/Pyongyang'),
-    id: 'Asia/Pyongyang'
-  },
-  {
-    offset: '(UTC+09:00)',
-    zone_name: $t('timeZone.Asia/Seoul'),
-    id: 'Asia/Seoul'
-  },
-  {
-    offset: '(UTC+09:00)',
-    zone_name: $t('timeZone.Asia/Yakutsk'),
-    id: 'Asia/Yakutsk'
-  },
-  {
-    offset: '(UTC+09:30)',
-    zone_name: $t('timeZone.Australia/Adelaide'),
-    id: 'Australia/Adelaide'
-  },
-  {
-    offset: '(UTC+09:30)',
-    zone_name: $t('timeZone.Australia/Darwin'),
-    id: 'Australia/Darwin'
-  },
-  {
-    offset: '(UTC+10:00)',
-    zone_name: $t('timeZone.Australia/Brisbane'),
-    id: 'Australia/Brisbane'
-  },
-  {
-    offset: '(UTC+10:00)',
-    zone_name: $t('timeZone.Asia/Vladivostok'),
-    id: 'Asia/Vladivostok'
-  },
-  {
-    offset: '(UTC+10:00)',
-    zone_name: $t('timeZone.Pacific/Guam'),
-    id: 'Pacific/Guam'
-  },
-  {
-    offset: '(UTC+10:00)',
-    zone_name: $t('timeZone.Australia/Hobart'),
-    id: 'Australia/Hobart'
-  },
-  {
-    offset: '(UTC+10:00)',
-    zone_name: $t('timeZone.Australia/Sydney'),
-    id: 'Australia/Sydney'
-  },
-  {
-    offset: '(UTC+10:30)',
-    zone_name: $t('timeZone.Australia/Lord_Howe'),
-    id: 'Australia/Lord_Howe'
-  },
-  {
-    offset: '(UTC+11:00)',
-    zone_name: $t('timeZone.Pacific/Bougainville'),
-    id: 'Pacific/Bougainville'
-  },
-  {
-    offset: '(UTC+11:00)',
-    zone_name: $t('timeZone.Asia/Magadan'),
-    id: 'Asia/Magadan'
-  },
-  {
-    offset: '(UTC+11:00)',
-    zone_name: $t('timeZone.Pacific/Norfolk'),
-    id: 'Pacific/Norfolk'
-  },
-  {
-    offset: '(UTC+11:00)',
-    zone_name: $t('timeZone.Asia/Srednekolymsk'),
-    id: 'Asia/Srednekolymsk'
-  },
-  {
-    offset: '(UTC+11:00)',
-    zone_name: $t('timeZone.Asia/Sakhalin'),
-    id: 'Asia/Sakhalin'
-  },
-  {
-    offset: '(UTC+11:00)',
-    zone_name: $t('timeZone.Pacific/Guadalcanal'),
-    id: 'Pacific/Guadalcanal'
-  },
-  {
-    offset: '(UTC+12:00)',
-    zone_name: $t('timeZone.Asia/Kamchatka'),
-    id: 'Asia/Kamchatka'
-  },
-  {
-    offset: '(UTC+12:00)',
-    zone_name: $t('timeZone.Pacific/Auckland'),
-    id: 'Pacific/Auckland'
-  },
-  {
-    offset: '(UTC+12:00)',
-    zone_name: $t('timeZone.Pacific/Fiji'),
-    id: 'Pacific/Fiji'
-  },
-  {
-    offset: '(UTC+12:00)',
-    zone_name: $t('timeZone.Etc/GMT-12'),
-    id: 'Etc/GMT-12'
-  },
-  {
-    offset: '(UTC+12:45)',
-    zone_name: $t('timeZone.Pacific/Chatham'),
-    id: 'Pacific/Chatham'
-  },
-  {
-    offset: '(UTC+13:00)',
-    zone_name: $t('timeZone.Pacific/Tongatapu'),
-    id: 'Pacific/Tongatapu'
-  },
-  {
-    offset: '(UTC+13:00)',
-    zone_name: $t('timeZone.Pacific/Apia'),
-    id: 'Pacific/Apia'
-  },
-  {
-    offset: '(UTC+13:00)',
-    zone_name: $t('timeZone.Etc/GMT-13'),
-    id: 'Etc/GMT-13'
-  },
-  {
-    offset: '(UTC+14:00)',
-    zone_name: $t('timeZone.Indian/Christmas'),
-    id: 'Indian/Christmas'
-  }
+import { $t } from '../i18n/index'
+import { winIdFromIana } from './winIanaMap'
+
+// 每个时区的定义（IANA id + 固定 offset + 翻译 key）
+// 顺序从 UTC-12 到 UTC+14，基本保持与 Windows 时区列表一致
+const ZONES: Array<{ offset: string; iana: string; labelKey: string; winId?: string }> = [
+  { offset: '(UTC-12:00)', iana: 'Etc/GMT+12', labelKey: 'timeZone.Etc/GMT+12' },
+  { offset: '(UTC-11:00)', iana: 'Etc/GMT+11', labelKey: 'timeZone.Etc/GMT+11' },
+  { offset: '(UTC-10:00)', iana: 'America/Adak', labelKey: 'timeZone.America/Adak' },
+  { offset: '(UTC-10:00)', iana: 'Pacific/Honolulu', labelKey: 'timeZone.Pacific/Honolulu' },
+  { offset: '(UTC-09:30)', iana: 'Pacific/Marquesas', labelKey: 'timeZone.Pacific/Marquesas' },
+  { offset: '(UTC-09:00)', iana: 'America/Anchorage', labelKey: 'timeZone.America/Anchorage' },
+  { offset: '(UTC-09:00)', iana: 'Etc/GMT+9', labelKey: 'timeZone.Etc/GMT+9' },
+  { offset: '(UTC-08:00)', iana: 'America/Los_Angeles', labelKey: 'timeZone.America/Los_Angeles' },
+  { offset: '(UTC-08:00)', iana: 'America/Tijuana', labelKey: 'timeZone.America/Tijuana' },
+  { offset: '(UTC-08:00)', iana: 'Etc/GMT+8', labelKey: 'timeZone.Etc/GMT+8' },
+  { offset: '(UTC-07:00)', iana: 'America/Mazatlan', labelKey: 'timeZone.America/Mazatlan' },
+  { offset: '(UTC-07:00)', iana: 'America/Denver', labelKey: 'timeZone.America/Denver' },
+  { offset: '(UTC-07:00)', iana: 'America/Phoenix', labelKey: 'timeZone.America/Phoenix' },
+  { offset: '(UTC-07:00)', iana: 'America/Whitehorse', labelKey: 'timeZone.America/Whitehorse' },
+  { offset: '(UTC-06:00)', iana: 'Pacific/Easter', labelKey: 'timeZone.Pacific/Easter' },
+  { offset: '(UTC-06:00)', iana: 'America/Mexico_City', labelKey: 'timeZone.America/Mexico_City' },
+  { offset: '(UTC-06:00)', iana: 'America/Regina', labelKey: 'timeZone.America/Regina' },
+  { offset: '(UTC-06:00)', iana: 'America/Chicago', labelKey: 'timeZone.America/Chicago' },
+  { offset: '(UTC-06:00)', iana: 'America/Guatemala', labelKey: 'timeZone.America/Guatemala' },
+  { offset: '(UTC-05:00)', iana: 'America/Bogota', labelKey: 'timeZone.America/Bogota' },
+  { offset: '(UTC-05:00)', iana: 'America/New_York', labelKey: 'timeZone.America/New_York' },
+  { offset: '(UTC-05:00)', iana: 'America/Havana', labelKey: 'timeZone.America/Havana' },
+  { offset: '(UTC-05:00)', iana: 'America/Port-au-Prince', labelKey: 'timeZone.America/Port-au-Prince' },
+  { offset: '(UTC-05:00)', iana: 'America/Cancun', labelKey: 'timeZone.America/Cancun' },
+  { offset: '(UTC-05:00)', iana: 'America/Grand_Turk', labelKey: 'timeZone.America/Grand_Turk' },
+  { offset: '(UTC-05:00)', iana: 'America/Indiana/Indianapolis', labelKey: 'timeZone.America/Indiana/Indianapolis' },
+  { offset: '(UTC-04:00)', iana: 'America/Halifax', labelKey: 'timeZone.America/Halifax' },
+  { offset: '(UTC-04:00)', iana: 'America/Caracas', labelKey: 'timeZone.America/Caracas' },
+  { offset: '(UTC-04:00)', iana: 'America/Cuiaba', labelKey: 'timeZone.America/Cuiaba' },
+  { offset: '(UTC-04:00)', iana: 'America/Port_of_Spain', labelKey: 'timeZone.America/Port_of_Spain' },
+  { offset: '(UTC-04:00)', iana: 'America/Santiago', labelKey: 'timeZone.America/Santiago' },
+  { offset: '(UTC-04:00)', iana: 'America/Asuncion', labelKey: 'timeZone.America/Asuncion' },
+  { offset: '(UTC-03:30)', iana: 'America/St_Johns', labelKey: 'timeZone.America/St_Johns' },
+  { offset: '(UTC-03:00)', iana: 'America/Araguaina', labelKey: 'timeZone.America/Araguaina' },
+  { offset: '(UTC-03:00)', iana: 'America/Sao_Paulo', labelKey: 'timeZone.America/Sao_Paulo' },
+  { offset: '(UTC-03:00)', iana: 'America/Argentina/Buenos_Aires', labelKey: 'timeZone.America/Argentina/Buenos_Aires' },
+  { offset: '(UTC-03:00)', iana: 'America/Cayenne', labelKey: 'timeZone.America/Cayenne' },
+  { offset: '(UTC-03:00)', iana: 'America/Montevideo', labelKey: 'timeZone.America/Montevideo' },
+  { offset: '(UTC-03:00)', iana: 'America/Punta_Arenas', labelKey: 'timeZone.America/Punta_Arenas' },
+  { offset: '(UTC-03:00)', iana: 'America/El_Salvador', labelKey: 'timeZone.America/El_Salvador' },
+  { offset: '(UTC-03:00)', iana: 'America/Miquelon', labelKey: 'timeZone.America/Miquelon' },
+  { offset: '(UTC-02:00)', iana: 'America/Nuuk', labelKey: 'timeZone.America/Nuuk' },
+  { offset: '(UTC-02:00)', iana: 'Etc/GMT+2', labelKey: 'timeZone.Etc/GMT+2' },
+  { offset: '(UTC-01:00)', iana: 'Atlantic/Cape_Verde', labelKey: 'timeZone.Atlantic/Cape_Verde' },
+  { offset: '(UTC-01:00)', iana: 'Atlantic/Azores', labelKey: 'timeZone.Atlantic/Azores' },
+  { offset: '(UTC)',       iana: 'Etc/GMT',        labelKey: 'timeZone.Etc/GMT' },
+  { offset: '(UTC+00:00)', iana: 'Europe/London', labelKey: 'timeZone.Europe/London' },
+  { offset: '(UTC+00:00)', iana: 'Africa/Monrovia', labelKey: 'timeZone.Africa/Monrovia' },
+  { offset: '(UTC+00:00)', iana: 'Africa/Sao_Tome', labelKey: 'timeZone.Africa/Sao_Tome' },
+  { offset: '(UTC+01:00)', iana: 'Africa/Casablanca', labelKey: 'timeZone.Africa/Casablanca' },
+  { offset: '(UTC+01:00)', iana: 'Europe/Berlin', labelKey: 'timeZone.Europe/Berlin' },
+  { offset: '(UTC+01:00)', iana: 'Europe/Belgrade', labelKey: 'timeZone.Europe/Belgrade' },
+  { offset: '(UTC+01:00)', iana: 'Europe/Paris', labelKey: 'timeZone.Europe/Paris' },
+  { offset: '(UTC+01:00)', iana: 'Europe/Sarajevo', labelKey: 'timeZone.Europe/Sarajevo' },
+  { offset: '(UTC+01:00)', iana: 'Africa/Lagos', labelKey: 'timeZone.Africa/Lagos' },
+  { offset: '(UTC+02:00)', iana: 'Asia/Beirut', labelKey: 'timeZone.Asia/Beirut' },
+  { offset: '(UTC+02:00)', iana: 'Africa/Tripoli', labelKey: 'timeZone.Africa/Tripoli' },
+  { offset: '(UTC+02:00)', iana: 'Africa/Johannesburg', labelKey: 'timeZone.Africa/Johannesburg' },
+  { offset: '(UTC+02:00)', iana: 'Europe/Helsinki', labelKey: 'timeZone.Europe/Helsinki' },
+  { offset: '(UTC+02:00)', iana: 'Europe/Chisinau', labelKey: 'timeZone.Europe/Chisinau' },
+  { offset: '(UTC+02:00)', iana: 'Europe/Kaliningrad', labelKey: 'timeZone.Europe/Kaliningrad' },
+  { offset: '(UTC+02:00)', iana: 'Asia/Gaza', labelKey: 'timeZone.Asia/Gaza' },
+  { offset: '(UTC+02:00)', iana: 'Africa/Khartoum', labelKey: 'timeZone.Africa/Khartoum' },
+  { offset: '(UTC+02:00)', iana: 'Africa/Cairo', labelKey: 'timeZone.Africa/Cairo' },
+  { offset: '(UTC+02:00)', iana: 'Africa/Windhoek', labelKey: 'timeZone.Africa/Windhoek' },
+  { offset: '(UTC+02:00)', iana: 'Europe/Athens', labelKey: 'timeZone.Europe/Athens' },
+  { offset: '(UTC+02:00)', iana: 'Asia/Jerusalem', labelKey: 'timeZone.Asia/Jerusalem' },
+  { offset: '(UTC+02:00)', iana: 'Africa/Juba', labelKey: 'timeZone.Africa/Juba' },
+  { offset: '(UTC+03:00)', iana: 'Asia/Amman', labelKey: 'timeZone.Asia/Amman' },
+  { offset: '(UTC+03:00)', iana: 'Asia/Baghdad', labelKey: 'timeZone.Asia/Baghdad' },
+  { offset: '(UTC+03:00)', iana: 'Asia/Damascus', labelKey: 'timeZone.Asia/Damascus' },
+  { offset: '(UTC+03:00)', iana: 'Europe/Volgograd', labelKey: 'timeZone.Europe/Volgograd' },
+  { offset: '(UTC+03:00)', iana: 'Asia/Kuwait', labelKey: 'timeZone.Asia/Kuwait' },
+  { offset: '(UTC+03:00)', iana: 'Europe/Minsk', labelKey: 'timeZone.Europe/Minsk' },
+  { offset: '(UTC+03:00)', iana: 'Europe/Moscow', labelKey: 'timeZone.Europe/Moscow' },
+  { offset: '(UTC+03:00)', iana: 'Africa/Nairobi', labelKey: 'timeZone.Africa/Nairobi' },
+  { offset: '(UTC+03:00)', iana: 'Europe/Istanbul', labelKey: 'timeZone.Europe/Istanbul' },
+  { offset: '(UTC+03:30)', iana: 'Asia/Tehran', labelKey: 'timeZone.Asia/Tehran' },
+  { offset: '(UTC+04:00)', iana: 'Asia/Dubai', labelKey: 'timeZone.Asia/Dubai' },
+  { offset: '(UTC+04:00)', iana: 'Europe/Astrakhan', labelKey: 'timeZone.Europe/Astrakhan' },
+  { offset: '(UTC+04:00)', iana: 'Asia/Yerevan', labelKey: 'timeZone.Asia/Yerevan' },
+  { offset: '(UTC+04:00)', iana: 'Asia/Baku', labelKey: 'timeZone.Asia/Baku' },
+  { offset: '(UTC+04:00)', iana: 'Asia/Tbilisi', labelKey: 'timeZone.Asia/Tbilisi' },
+  { offset: '(UTC+04:00)', iana: 'Indian/Mauritius', labelKey: 'timeZone.Indian/Mauritius' },
+  { offset: '(UTC+04:00)', iana: 'Europe/Saratov', labelKey: 'timeZone.Europe/Saratov' },
+  { offset: '(UTC+04:00)', iana: 'Europe/Ulyanovsk', labelKey: 'timeZone.Europe/Ulyanovsk' },
+  { offset: '(UTC+04:30)', iana: 'Asia/Kabul', labelKey: 'timeZone.Asia/Kabul' },
+  { offset: '(UTC+05:00)', iana: 'Asia/Ashgabat', labelKey: 'timeZone.Asia/Ashgabat' },
+  { offset: '(UTC+05:00)', iana: 'Asia/Almaty', labelKey: 'timeZone.Asia/Almaty' },
+  { offset: '(UTC+05:00)', iana: 'Asia/Yekaterinburg', labelKey: 'timeZone.Asia/Yekaterinburg' },
+  { offset: '(UTC+05:00)', iana: 'Asia/Karachi', labelKey: 'timeZone.Asia/Karachi' },
+  { offset: '(UTC+05:30)', iana: 'Asia/Kolkata', labelKey: 'timeZone.Asia/Kolkata' },
+  { offset: '(UTC+05:30)', iana: 'Asia/Colombo', labelKey: 'timeZone.Asia/Colombo' },
+  { offset: '(UTC+05:45)', iana: 'Asia/Kathmandu', labelKey: 'timeZone.Asia/Kathmandu' },
+  { offset: '(UTC+06:00)', iana: 'Asia/Bishkek', labelKey: 'timeZone.Asia/Bishkek' },
+  { offset: '(UTC+06:00)', iana: 'Asia/Dhaka', labelKey: 'timeZone.Asia/Dhaka' },
+  { offset: '(UTC+06:00)', iana: 'Asia/Omsk', labelKey: 'timeZone.Asia/Omsk' },
+  { offset: '(UTC+06:30)', iana: 'Asia/Yangon', labelKey: 'timeZone.Asia/Yangon' },
+  { offset: '(UTC+07:00)', iana: 'Asia/Barnaul', labelKey: 'timeZone.Asia/Barnaul' },
+  { offset: '(UTC+07:00)', iana: 'Asia/Hovd', labelKey: 'timeZone.Asia/Hovd' },
+  { offset: '(UTC+07:00)', iana: 'Asia/Krasnoyarsk', labelKey: 'timeZone.Asia/Krasnoyarsk' },
+  { offset: '(UTC+07:00)', iana: 'Asia/Bangkok', labelKey: 'timeZone.Asia/Bangkok' },
+  { offset: '(UTC+07:00)', iana: 'Asia/Tomsk', labelKey: 'timeZone.Asia/Tomsk' },
+  { offset: '(UTC+07:00)', iana: 'Asia/Novosibirsk', labelKey: 'timeZone.Asia/Novosibirsk' },
+  { offset: '(UTC+08:00)', iana: 'Asia/Shanghai', labelKey: 'timeZone.Asia/Shanghai' },
+  { offset: '(UTC+08:00)', iana: 'Asia/Kuala_Lumpur', labelKey: 'timeZone.Asia/Kuala_Lumpur' },
+  { offset: '(UTC+08:00)', iana: 'Australia/Perth', labelKey: 'timeZone.Australia/Perth' },
+  { offset: '(UTC+08:00)', iana: 'Asia/Taipei', labelKey: 'timeZone.Asia/Taipei' },
+  { offset: '(UTC+08:00)', iana: 'Asia/Ulaanbaatar', labelKey: 'timeZone.Asia/Ulaanbaatar' },
+  { offset: '(UTC+08:00)', iana: 'Asia/Irkutsk', labelKey: 'timeZone.Asia/Irkutsk' },
+  { offset: '(UTC+08:45)', iana: 'Australia/Eucla', labelKey: 'timeZone.Australia/Eucla' },
+  { offset: '(UTC+09:00)', iana: 'Asia/Chita', labelKey: 'timeZone.Asia/Chita' },
+  { offset: '(UTC+09:00)', iana: 'Asia/Tokyo', labelKey: 'timeZone.Asia/Tokyo' },
+  { offset: '(UTC+09:00)', iana: 'Asia/Pyongyang', labelKey: 'timeZone.Asia/Pyongyang' },
+  { offset: '(UTC+09:00)', iana: 'Asia/Seoul', labelKey: 'timeZone.Asia/Seoul' },
+  { offset: '(UTC+09:00)', iana: 'Asia/Yakutsk', labelKey: 'timeZone.Asia/Yakutsk' },
+  { offset: '(UTC+09:30)', iana: 'Australia/Adelaide', labelKey: 'timeZone.Australia/Adelaide' },
+  { offset: '(UTC+09:30)', iana: 'Australia/Darwin', labelKey: 'timeZone.Australia/Darwin' },
+  { offset: '(UTC+10:00)', iana: 'Australia/Brisbane', labelKey: 'timeZone.Australia/Brisbane' },
+  { offset: '(UTC+10:00)', iana: 'Asia/Vladivostok', labelKey: 'timeZone.Asia/Vladivostok' },
+  { offset: '(UTC+10:00)', iana: 'Pacific/Guam', labelKey: 'timeZone.Pacific/Guam' },
+  { offset: '(UTC+10:00)', iana: 'Australia/Hobart', labelKey: 'timeZone.Australia/Hobart' },
+  { offset: '(UTC+10:00)', iana: 'Australia/Sydney', labelKey: 'timeZone.Australia/Sydney' },
+  { offset: '(UTC+10:30)', iana: 'Australia/Lord_Howe', labelKey: 'timeZone.Australia/Lord_Howe' },
+  { offset: '(UTC+11:00)', iana: 'Pacific/Bougainville', labelKey: 'timeZone.Pacific/Bougainville' },
+  { offset: '(UTC+11:00)', iana: 'Asia/Magadan', labelKey: 'timeZone.Asia/Magadan' },
+  { offset: '(UTC+11:00)', iana: 'Pacific/Norfolk', labelKey: 'timeZone.Pacific/Norfolk' },
+  { offset: '(UTC+11:00)', iana: 'Asia/Srednekolymsk', labelKey: 'timeZone.Asia/Srednekolymsk' },
+  { offset: '(UTC+11:00)', iana: 'Asia/Sakhalin', labelKey: 'timeZone.Asia/Sakhalin' },
+  { offset: '(UTC+11:00)', iana: 'Pacific/Guadalcanal', labelKey: 'timeZone.Pacific/Guadalcanal' },
+  { offset: '(UTC+12:00)', iana: 'Asia/Kamchatka', labelKey: 'timeZone.Asia/Kamchatka' },
+  { offset: '(UTC+12:00)', iana: 'Pacific/Auckland', labelKey: 'timeZone.Pacific/Auckland' },
+  { offset: '(UTC+12:00)', iana: 'Pacific/Fiji', labelKey: 'timeZone.Pacific/Fiji' },
+  { offset: '(UTC+12:00)', iana: 'Etc/GMT-12', labelKey: 'timeZone.Etc/GMT-12' },
+  { offset: '(UTC+12:45)', iana: 'Pacific/Chatham', labelKey: 'timeZone.Pacific/Chatham' },
+  { offset: '(UTC+13:00)', iana: 'Pacific/Tongatapu', labelKey: 'timeZone.Pacific/Tongatapu' },
+  { offset: '(UTC+13:00)', iana: 'Pacific/Apia', labelKey: 'timeZone.Pacific/Apia' },
+  { offset: '(UTC+13:00)', iana: 'Etc/GMT-13', labelKey: 'timeZone.Etc/GMT-13' },
+  { offset: '(UTC+14:00)', iana: 'Indian/Christmas', labelKey: 'timeZone.Indian/Christmas' },
 ]
+
+/**
+ * 基础时区列表。
+ *
+ * - `id`：IANA 时区 ID。用于 Linux / Luxon 等环境。
+ * - `winId`：Windows 时区 ID。用于 Windows 系统及抓取自 Windows 注册表的场景。
+ * - `offset` / `zone_name`：用于在下拉框内显示 label，保持原有风格不变。
+ */
+export const baseZone = ZONES.map(z => ({
+  offset: z.offset,
+  zone_name: $t(z.labelKey),
+  id: z.iana,
+  winId: z.winId || winIdFromIana[z.iana] || z.iana,
+}))
