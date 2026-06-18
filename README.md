@@ -43,29 +43,9 @@ import { timeZones, LanguageEnum } from '@grombolar/win-timezone-utils'
 </script>
 ```
 
-#### 0.2.9版本更新
- - 新增Linux系统IANA时区支持
- - 修复Windows系统IANA时区映射问题
-
-timeZones 格式
-```ts
-export interface TimeZone {
-  label: string
-  // IANA 时区 ID
-  // Linux / Luxon 场景下直接使用
-  value: string
-  // Windows 时区 ID
-  winValue: string
-}
-
-```
-*\*注意：winValue 为Windows系统时区ID, 与Intl.DateTimeFormat().resolvedOptions().timeZone;获取的IANA时区ID并不一致。*
-
 ### 其他方法
 
 | 方法名          | 传参      | 返回值       | 说明           |
 | -------------- | ----------| ------------ | ------------- |
 | formatterTimeInTimezone    | time:number, timezone:string | string('yyyy-MM-dd HH:mm:ss') | 将时间转换为对应时区的时间 |
 | getTimestempByTimezone | timeStr:string, timezone:string, format?:string | number | 将格式化的时间转为对应时区的时间戳 |
-| toIanaTimezoneId | timezone:string | string | 将Windows时区转为IANA时区 |
-| toWindowsTimezoneId | timezone:string | string | 将IANA时区转为Windows时区 |
