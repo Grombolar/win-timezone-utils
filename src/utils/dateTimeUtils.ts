@@ -1,6 +1,6 @@
 import { DateTime } from 'luxon'
 
-import { ianaFromWinId, winIdFromIana } from '../constant/winIanaMap'
+import { ianaFromWinId, ianaToWinId } from '../constant/winIanaMap'
 
 interface TimeZone {
   offset: string
@@ -15,44 +15,54 @@ interface TimeZone {
  */
 export function isWindowsTimezoneId(tz: string): boolean {
   if (!tz) return false
-  // IANA 的常见格式：Continent/City 或 Etc/GMT[+-]\d+
   if (tz.includes('/')) return false
-  // Windows 时区 id 通常带有 "Standard Time" 或 "UTC" 前缀
   if (/Standard Time$/i.test(tz)) return true
   if (/^UTC[+-]?/i.test(tz)) return true
-  // 一般兜底：没有 '/' 且有空格，视为 Windows 风格
   return tz.includes(' ')
 }
 
 /**
- * 将任意（Windows 或 IANA）时区 id 规范化为 IANA。
- * 若传入值已经是 IANA，则直接返回；若找不到映射，退回入参。
+ * 将任意时区 id 规范化为 IANA。
+ * - 已经是 IANA（含 '/' 或在 ianaToWinId 表中）：原样返回
+ * - 是 Windows 时区 id：返回其 territory=001 主 IANA
+ * - 找不到映射：原样返回
  */
 export function toIanaTimezoneId(tz: string): string {
   if (!tz) return tz
-  // 已经是 IANA 风格（含 '/'）或直接命中 IANA 表
-  if (tz.includes('/') && winIdFromIana[tz]) return tz
+  if (ianaToWinId[tz]) return tz
   if (ianaFromWinId[tz]) return ianaFromWinId[tz]
-  // 大小写不敏感查找
-  const lower = tz.toLowerCase()
-  for (const key of Object.keys(ianaFromWinId)) {
-    if (key.toLowerCase() === lower) return ianaFromWinId[key]
-  }
+  if (tz.includes('/')) return tz // 未知 IANA，仍当作 IANA 处理
   return tz
 }
 
 /**
- * 将任意（Windows 或 IANA）时区 id 规范化为 Windows 时区 id。
- * 若找不到映射，退回入参。
+ * 将任意时区 id 规范化为 Windows 时区 id。
+ * 支持具体城市别名（如 Asia/Hong_Kong -> China Standard Time）。
  */
 export function toWindowsTimezoneId(tz: string): string {
   if (!tz) return tz
-  if (winIdFromIana[tz]) return winIdFromIana[tz]
-  if (ianaFromWinId[tz]) return tz
-  const lower = tz.toLowerCase()
-  for (const [key, iana] of Object.entries(ianaFromWinId)) {
-    if (key.toLowerCase() === lower || iana.toLowerCase() === lower) return key
-  }
+  if (ianaToWinId[tz]) return ianaToWinId[tz]
+  if (ianaFromWinId[tz]) return tz // 已是 winId
+  return tz
+}
+
+/**
+ * 将任意时区 id（IANA 别名 / Windows id）解析为 baseZone 下拉项中使用的 value
+ * （即 CLDR territory="001" 主 IANA），方便 v-model 初始化或反查下拉项。
+ *
+ * 例：
+ *   resolveTimezoneToBaseValue('Asia/Hong_Kong')        => 'Asia/Shanghai'
+ *   resolveTimezoneToBaseValue('Australia/Melbourne')   => 'Australia/Sydney'
+ *   resolveTimezoneToBaseValue('China Standard Time')   => 'Asia/Shanghai'
+ *   resolveTimezoneToBaseValue('Pacific/Kiritimati')    => 'Pacific/Kiritimati'
+ */
+export function resolveTimezoneToBaseValue(tz: string): string {
+  if (!tz) return tz
+  // Windows id：直接走 territory=001 主映射
+  if (ianaFromWinId[tz]) return ianaFromWinId[tz]
+  // 任意 IANA：先反查到 winId，再回到 territory=001 主映射
+  const win = ianaToWinId[tz]
+  if (win && ianaFromWinId[win]) return ianaFromWinId[win]
   return tz
 }
 

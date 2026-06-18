@@ -6,7 +6,7 @@ npm install @grombolar/win-timezone-utils
 yarn add @grombolar/win-timezone-utils
 ```
 
-*注意：需要vue 3.0.0以上版本
+*\*注意：需要vue 3.0.0以上版本*
 
 当前支持中文、英文、法语三种语言切换
 
@@ -59,6 +59,7 @@ export interface TimeZone {
 }
 
 ```
+*\*注意：winValue 为Windows系统时区ID, 与Intl.DateTimeFormat().resolvedOptions().timeZone;获取的IANA时区ID并不一致。*
 
 ### 其他方法
 
